@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bookoptions">
+        <item>查看详细信息</item>
+        <item>查看豆瓣书评</item>
+        <item>网络比价</item>
+        <item>在网上搜索这本书</item>
+        <item>通过短信分享给朋友</item>
+    </string-array>
+    
+    <string-array name="reviewoptions">        
+        <item>短信分享给朋友</item>
+        <item>发送Email给朋友</item>
+        <item>阅读全文</item>
+    </string-array>
+
+    <string-array name="buyoptions">
+        <item>访问网上书店页面</item>    
+        <item>短信分享给朋友</item>
+        <item>发送Email给朋友</item>
+    </string-array>
+</resources>

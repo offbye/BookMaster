@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/book_view" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:spacing="5dp"
+	android:background="@color/mbg" android:orientation="vertical"
+	>
+	<RelativeLayout android:layout_width="fill_parent" android:padding="6dp"  android:gravity="center" 
+		android:layout_height="wrap_content" android:background="@drawable/tbg">
+		<ImageButton android:id="@+id/returnhome"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@xml/returnhome" android:background="#00ffffff"
+			android:layout_alignParentLeft="true" />
+
+		<Button android:id="@+id/readreviews" 
+			android:layout_width="wrap_content" android:background="@xml/btn"
+			android:text="@string/readreviews" android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/compareprices" />
+		<Button android:id="@+id/compareprices"  android:layout_marginLeft="5dp"
+			android:layout_width="wrap_content" android:background="@xml/btn"
+			android:text="@string/compareprices" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" />
+			
+	</RelativeLayout>
+
+	<TextView android:text="title" android:textSize="20dp"
+		android:layout_gravity="center_horizontal" android:id="@+id/title"
+		android:layout_width="wrap_content"  android:textColor="#ff008800"
+		android:layout_height="wrap_content" android:padding="3dp">
+	</TextView>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="#00ffffff">
+
+		<ImageView android:id="@+id/bookimage"
+			android:layout_height="wrap_content" android:src="@drawable/book"
+			android:layout_width="wrap_content" android:padding="3dp">
+		</ImageView>
+
+		<TextView android:id="@+id/bookauthor"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookimage"
+			android:text="@string/bookauthor" />
+
+		<TextView android:id="@+id/booktranlator"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookimage"
+			android:text="@string/booktranlator"
+			android:layout_below="@+id/bookauthor" />
+
+		<TextView android:id="@+id/bookisbn"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookimage"
+			android:text="@string/bookisbn"
+			android:layout_below="@+id/booktranlator" />
+
+		<TextView android:id="@+id/bookpages"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookimage"
+			android:text="@string/bookpages"
+			android:layout_below="@+id/bookisbn" />
+		<TextView android:id="@+id/bookprice"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookimage"
+			android:text="@string/bookprice"
+			android:layout_below="@+id/bookpages" />
+		<TextView android:id="@+id/bookpublisher"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookimage"
+			android:text="@string/bookpublisher"
+			android:layout_below="@+id/bookprice" />
+		<TextView android:id="@+id/bookpubdate"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookimage"
+			android:text="@string/bookpubdate"
+			android:layout_below="@+id/bookpublisher" />
+
+
+		<TextView android:id="@+id/author"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true"
+			android:textColor="#ff000000" android:text=""
+			android:layout_toRightOf="@+id/bookauthor" />
+		<TextView android:id="@+id/tranlator"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/booktranlator"
+			android:text="" android:layout_below="@+id/bookauthor" />
+
+		<TextView android:id="@+id/isbn"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookisbn" android:text=""
+			android:layout_below="@+id/tranlator" />
+
+		<TextView android:id="@+id/pages"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookpages" android:text=""
+			android:layout_below="@+id/isbn" />
+		<TextView android:id="@+id/price"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookprice" android:text=""
+			android:layout_below="@+id/pages" />
+		<TextView android:id="@+id/publisher"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookpublisher"
+			android:text="" android:layout_below="@+id/price" />
+		<TextView android:id="@+id/pubdate"
+			android:layout_width="wrap_content" android:textSize="14dp"
+			android:layout_height="wrap_content" android:padding="1dp"
+			android:singleLine="true" android:textColor="#ff000000"
+			android:layout_toRightOf="@+id/bookpubdate" android:text=""
+			android:layout_below="@+id/publisher" />
+
+	</RelativeLayout>
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent"  android:textColor="#ff000000"
+			android:layout_height="wrap_content">
+			<TextView android:text="Tags:" android:padding="3dp" android:textColor="#ff009900"
+				android:id="@+id/tags" android:layout_width="fill_parent" android:textSize="15dp"
+				android:layout_height="wrap_content">
+			</TextView>
+
+			<TextView android:text="@string/booksummary" android:textColor="#ff009900"
+				android:padding="3dp" android:id="@+id/booksummary" android:textSize="15dp"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content">
+			</TextView>
+			<TextView android:text="summary" android:padding="3dp" android:textColor="#ff000000"
+				android:id="@+id/summary" android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:scrollbars="vertical">
+			</TextView>
+
+			<TextView android:text="@string/bookauthorintro" android:textColor="#ff009900"
+				android:padding="3dp" android:id="@+id/bookauthorintro" android:textSize="15dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+			</TextView>
+			<TextView android:text="@string/no_author_intro" android:padding="3dp" android:textColor="#ff000000"
+				android:id="@+id/authorintro" android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+			</TextView>
+
+		</LinearLayout>
+	</ScrollView>
+
+
+
+</LinearLayout>

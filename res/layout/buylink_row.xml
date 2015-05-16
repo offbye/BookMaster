@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:gravity="center_vertical">
+
+	<ImageView android:id="@+id/sitelogo" android:padding="10dp"
+		android:layout_height="wrap_content" android:src="@drawable/beifa"
+		android:layout_width="wrap_content">
+	</ImageView>
+
+	<TextView android:id="@+id/sitename" android:singleLine="true"
+		android:layout_width="wrap_content" android:textSize="16dp"
+		android:layout_height="wrap_content" android:padding="5dp"
+		android:text="sitename" android:layout_toRightOf="@+id/sitelogo" />
+
+	<TextView android:id="@+id/siteprice"  android:textColor="#ff00cc00"
+		android:layout_width="wrap_content" android:textSize="14dp"
+		android:layout_height="wrap_content" android:padding="2dp"
+		android:layout_below="@+id/title" android:text="100"
+		android:layout_alignParentRight="true" />
+
+	<TextView android:id="@+id/savedprice" android:textColor="#ffff0000"
+		android:layout_width="wrap_content" android:textSize="14dp"
+		android:layout_height="wrap_content" android:padding="2dp"
+		android:singleLine="true" android:layout_alignParentRight="true"
+		android:layout_below="@+id/siteprice"  android:text="10"/>
+
+</RelativeLayout>

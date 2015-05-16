@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<ImageView android:id="@+id/bookimage" android:padding="10dp"
+		android:layout_height="wrap_content" android:src="@drawable/book"
+		android:layout_width="wrap_content">
+	</ImageView>
+
+	<TextView android:id="@+id/title"
+		android:layout_width="wrap_content" android:textSize="16dp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:scrollbars="vertical" android:textColor="#ff336699"
+		android:textColorHighlight="#ff0000ff" android:text="title"
+		android:layout_toRightOf="@+id/bookimage" />
+
+	<TextView android:id="@+id/author"
+		android:layout_width="wrap_content" android:textSize="14dp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:scrollbars="vertical" android:textColor="#ff336699"
+		android:textColorHighlight="#ff0000ff"
+		android:layout_below="@+id/title" android:text=""
+		android:layout_toRightOf="@+id/bookimage" />
+
+	<TextView android:id="@+id/price"
+		android:layout_width="wrap_content" android:textSize="14dp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:singleLine="true" android:textColorHighlight="#ffff0000"
+		android:layout_toRightOf="@+id/bookimage" android:text=""
+		android:layout_below="@+id/author" />
+
+	<TextView android:id="@+id/tranlator"
+		android:layout_width="wrap_content" android:textSize="14dp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:singleLine="true" android:textColor="#ff00ff00"
+		android:layout_toRightOf="@+id/price" android:text=""
+		android:layout_below="@+id/author" android:layout_marginLeft="10dp" />
+
+	<TextView android:id="@+id/publisher"
+		android:layout_width="wrap_content" android:textSize="14dp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:singleLine="true" android:textColorHighlight="#ffff0000"
+		android:layout_toRightOf="@+id/bookimage" android:text=""
+		android:layout_below="@+id/price" />
+
+	<TextView android:id="@+id/pubdate"
+		android:layout_width="wrap_content" android:textSize="14dp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:scrollbars="vertical" android:textColor="#ffcccccc"
+		android:layout_marginLeft="10dp" android:layout_below="@+id/price"
+		android:text="" android:layout_toRightOf="@+id/publisher" />
+
+
+	<RatingBar android:id="@+id/Ratingbar"
+		style="?android:attr/ratingBarStyleSmall"
+		android:layout_marginLeft="5dip" android:layout_width="wrap_content"
+		android:paddingTop="5dp" android:layout_toRightOf="@+id/bookimage"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/pubdate"
+		android:layout_gravity="center_vertical" />
+	<TextView android:id="@+id/ratingscore"
+		android:layout_width="wrap_content" android:textSize="14dp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:textColor="#ffff5138" android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp" android:layout_toRightOf="@+id/Ratingbar"
+		android:text="9" android:layout_below="@+id/pubdate" />
+	<TextView android:id="@+id/ratingnum"
+		android:layout_width="wrap_content" android:textSize="14dp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:layout_toRightOf="@+id/ratingscore" android:text="9"
+		android:layout_below="@+id/pubdate" />
+</RelativeLayout>

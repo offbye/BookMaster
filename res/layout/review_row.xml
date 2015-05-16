@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<ImageView android:id="@+id/user_avatar" android:padding="5dp"
+		android:layout_height="wrap_content" android:src="@drawable/noavatar"
+		android:layout_width="wrap_content"> 
+	</ImageView>
+
+	<TextView android:id="@+id/title"
+		android:layout_width="wrap_content" android:textSize="16sp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:scrollbars="vertical" android:textColor="#ff336699"
+		android:textColorHighlight="#ff0000ff" android:text="title"
+		android:layout_toRightOf="@+id/user_avatar" />
+	<TextView android:id="@+id/author"
+		android:layout_width="wrap_content" android:textSize="14sp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:scrollbars="vertical" android:textColor="#ff336699"
+		android:textColorHighlight="#ff0000ff"
+		android:layout_below="@+id/title" android:text="author"
+		android:layout_toRightOf="@+id/user_avatar" />
+
+	<TextView android:id="@+id/publisheddate"
+		android:layout_width="wrap_content" android:textSize="14sp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:scrollbars="vertical" android:textColor="#ffcccccc"
+		android:textColorHighlight="#ff0000ff"
+		android:layout_below="@+id/title" android:text="publisheddate"
+		android:layout_alignParentRight="true" />
+		
+	<TextView android:id="@+id/reviewopen"
+		android:layout_width="wrap_content" android:textSize="12sp"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:textColor="#ff99ff00" android:layout_toRightOf="@+id/user_avatar"
+		android:layout_below="@+id/publisheddate" android:text="@string/msg_review_open" />
+		
+	<TextView android:id="@+id/summary"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:padding="1dp"
+		android:textColorHighlight="#ffff0000" android:visibility="gone"
+		android:layout_toRightOf="@+id/user_avatar" android:text="summary"
+		android:layout_below="@+id/reviewopen" />
+
+	<RatingBar android:id="@+id/Ratingbar"
+		style="?android:attr/ratingBarStyleSmall"
+		android:layout_marginLeft="5dp" android:layout_alignParentRight="true"
+		android:layout_width="wrap_content" android:paddingTop="5dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical" />
+</RelativeLayout>

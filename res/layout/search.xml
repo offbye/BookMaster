@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layoutAnimation="@anim/layout_animation_table"
+	android:animationCache="false" android:clipToPadding="false"
+	android:padding="12dp" android:layout_width="fill_parent"
+	android:background="@drawable/mbg" android:layout_height="fill_parent"
+	android:stretchColumns="1">
+	<TableRow android:gravity="center"
+		android:layoutAnimation="@anim/layout_animation_row_left_slide">
+		<TextView android:gravity="right" android:text=""
+			android:id="@+id/ct" />
+		<TextView android:gravity="center" android:textSize="20dp"
+			android:layout_width="fill_parent" android:padding="10dp"
+			android:text="@string/advsearch" android:layout_height="wrap_content"
+			android:singleLine="true" />
+	</TableRow>
+	<TableRow
+		android:layoutAnimation="@anim/layout_animation_row_left_slide">
+		<TextView android:gravity="right" android:textSize="18dp"
+			android:padding="10dp" android:text="@string/search_title" />
+		<EditText android:id="@+id/q" android:layout_width="fill_parent"
+			android:padding="10dp" android:singleLine="true"
+			android:layout_height="wrap_content" />
+	</TableRow>
+
+	<TableRow
+		android:layoutAnimation="@anim/layout_animation_row_right_slide">
+		<TextView android:text="@string/tags"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18dp"
+			android:padding="10dp" />
+		<EditText android:id="@+id/searchtag"
+			android:layout_width="fill_parent" android:padding="10dp"
+			android:layout_height="wrap_content" android:singleLine="true" />
+	</TableRow>
+
+	<TableRow
+		android:layoutAnimation="@anim/layout_animation_row_left_slide">
+		<TextView android:gravity="right" android:text=""
+			android:id="@+id/c" />
+		<Button android:id="@+id/search"
+			android:layout_width="wrap_content" android:text="@string/search"
+			android:layout_height="wrap_content">
+		</Button>
+	</TableRow>
+</TableLayout>
